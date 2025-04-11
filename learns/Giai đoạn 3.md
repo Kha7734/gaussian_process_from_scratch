@@ -508,3 +508,8 @@ Return mean_f_star and var_f_star
 Bạn muốn mình tiếp tục với phần nào trước? 🔥  
 Ví dụ: `"Chi tiết hóa gradient, Hessian cho logistic likelihood"` hoặc `"Viết luôn code mẫu Python"`?  🚀🎯  
 (Chọn đi rồi mình đẩy tiếp cho!)
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>

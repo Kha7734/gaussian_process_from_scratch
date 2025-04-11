@@ -1,8 +1,3 @@
-Tuyệt vời! Bắt đầu với **1. Khái niệm cơ bản về Gaussian Processes (GPs)** nhé.  
-Tôi sẽ trình bày dễ hiểu, chậm rãi để bạn nắm vững tận gốc.
-
----
-
 # 1. Khái niệm cơ bản về Gaussian Processes
 
 ## 1.1 Gaussian là gì?
@@ -307,12 +302,12 @@ Bây giờ ta đã hoàn thành:
 ### Cụ thể trong mục này, chúng ta sẽ:
 1. **Viết code** cho Gaussian Process **Regression** (bản cực kỳ cơ bản).
 2. Tự tay implement các bước:
-   - Tính ma trận Kernel \( K(X, X) \), \( K(X, X_*) \), \( K(X_*, X_*) \)
+   - Tính ma trận Kernel $ K(X, X) $, $ K(X, X_*) $, $ K(X_*, X_*) $
    - Tính toán:
-     - **Posterior mean**: \( \mu_* = K(X_*, X) K(X, X)^{-1} y \)
-     - **Posterior covariance**: \( \Sigma_* = K(X_*, X_*) - K(X_*, X) K(X, X)^{-1} K(X, X_*) \)
+     - **Posterior mean**: $ \mu_* = K(X_*, X) K(X, X)^{-1} y $
+     - **Posterior covariance**: $ \Sigma_* = K(X_*, X_*) - K(X_*, X) K(X, X)^{-1} K(X, X_*) $
 3. **Tạo một bài toán Regression đơn giản**, ví dụ:
-   - \( y = \sin(x) \) trên khoảng \( [0, 5] \) với vài điểm noise.
+   - $ y = \sin(x) $ trên khoảng $ [0, 5] $ với vài điểm noise.
 4. **Plot** ra:
    - Predictive mean
    - Predictive variance (±2σ)
@@ -329,10 +324,10 @@ Bây giờ ta đã hoàn thành:
 | STT | Công việc | Trạng thái |
 |:---:|:---|:---:|
 | 1 | Viết hàm RBF Kernel | ⬜ |
-| 2 | Tính \( K(X,X) \), \( K(X,X_*) \), \( K(X_*,X_*) \) | ⬜ |
+| 2 | Tính $ K(X,X) $, $ K(X,X_*) $, $ K(X_*,X_*) $ | ⬜ |
 | 3 | Tính Posterior Mean và Covariance | ⬜ |
 | 4 | Viết function `predict(X_train, y_train, X_test)` | ⬜ |
-| 5 | Tạo dataset toy \( y = \sin(x) \) | ⬜ |
+| 5 | Tạo dataset toy $ y = \sin(x) $ | ⬜ |
 | 6 | Plot kết quả (mean ± 2σ) | ⬜ |
 
 ---
@@ -341,3 +336,7 @@ Bạn có muốn mình dẫn dắt từng bước một ngay bây giờ không?
 👉 Nếu đồng ý, mình sẽ bắt đầu bằng việc viết **hàm RBF Kernel** trước nhé. 🚀  
 (hoặc nếu bạn muốn điều chỉnh thứ tự thì cũng được nha!)
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>

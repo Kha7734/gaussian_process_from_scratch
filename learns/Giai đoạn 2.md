@@ -1,7 +1,3 @@
-Tuyệt vời! 👏 Để mình tóm tắt lại cho chắc trước khi mình cùng bạn triển khai **Giai đoạn 2 - Tiến hoá** nhé:
-
----
-
 ### ✅ Tóm tắt nhanh:
 - Giai đoạn 1 (hoàn thành): 
   - Đã thêm **noise** vào mô hình GP ⇒ Không cần thêm bước này nữa ở giai đoạn 2.
@@ -68,10 +64,10 @@ Bạn chọn:
 
 ✅ Các phần chính trong file này:
 1. **Tính Marginal Log Likelihood (MLL)**:
-   $
+   $$
    \log p(\mathbf{y}|\mathbf{X}) = -\frac{1}{2} \mathbf{y}^T K^{-1} \mathbf{y} - \frac{1}{2} \log |K| - \frac{n}{2} \log (2\pi)
-   $
-   - $K = K(X, X) + \sigma_n^2 I$
+   $$
+   - $$K = K(X, X) + \sigma_n^2 I$$
 
 2. **Gradient Descent tối ưu hyperparameters**:
    - Tối ưu hóa các tham số:
@@ -111,3 +107,8 @@ Ví dụ như:
 - Hoặc **kết nối** file tối ưu này vào GP model của bạn cho pipeline tự động hơn.
 
 Bạn chọn nhé! 🔥💬
+
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({ tex2jax: {inlineMath: [['$', '$']]}, messageStyle: "none" });
+</script>
