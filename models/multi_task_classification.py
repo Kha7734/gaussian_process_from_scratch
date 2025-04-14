@@ -35,8 +35,3 @@ class MultiOutputGPClassifier:
             all_preds.append(probs)
 
         return np.stack(all_preds, axis=1)  # shape (n_test_samples, num_outputs)
-
-
-# Note:
-# - You must have single_task_gp_classifier.py ready and import correctly.
-# - Kernel_func should be compatible across tasks (shared kernel).
